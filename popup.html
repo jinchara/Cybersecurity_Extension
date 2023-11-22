@@ -1,0 +1,86 @@
+<!-- popup.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Popup</title>
+  <style>
+    body {
+      
+      overflow: hidden; /* Hide any content outside the specified dimensions */
+      font-family: Arial, sans-serif;
+    }
+    
+    #image-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+}
+ 
+img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 3%;
+}
+ 
+button {
+    width: 150px;
+
+}
+
+.button-32 {
+  background-color: #fff000;
+  border-radius: 12px;
+  color: #000;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px 15px;
+  text-align: center;
+  transition: 200ms;
+  width: 100%;
+  box-sizing: border-box;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-32:not(:disabled):hover,
+.button-32:not(:disabled):focus {
+  outline: 0;
+  background: #f4e603;
+  box-shadow: 0 0 0 2px rgba(0,0,0,.2), 0 3px 8px 0 rgba(0,0,0,.15);
+}
+
+.button-32:disabled {
+  filter: saturate(0.2) opacity(0.5);
+  -webkit-filter: saturate(0.2) opacity(0.5);
+  cursor: not-allowed;
+}
+    
+  </style>
+</head>
+<body>
+  <!--<img src="alarm.png" alt="alarm">-->
+  <section class="text-center" id="hero" role="alert">
+   <img alt="alarm" src="alarm.png"/>
+   <button id="okayButton" class="btn btn-primary mt-3 button-32" role="button">
+    Okay
+   </button>
+  </section>
+  
+  
+  <!-- Bootstrap & jQuery JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+  </script>
+</body>
+</html>
